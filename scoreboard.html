@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>scoreboard.yml | GTabs Wiki</title><link rel="stylesheet" href="assets/style.css"></head><body><div class="layout"><aside class="sidebar"><div class="brand">G<span>Tabs</span></div><div class="tag">TAB • Scoreboard • UserLines</div><nav class="nav"><a class="" href="index.html">Home</a><a class="" href="installation.html">Installation</a><a class="" href="config.html">config.yml</a><a class="active" href="scoreboard.html">scoreboard.yml</a><a class="" href="animations.html">animations.yml</a><a class="" href="health.html">Health System</a><a class="" href="placeholders.html">Placeholders</a><a class="" href="compatibility.html">Compatibility</a><a class="" href="commands.html">Commands & Permissions</a><a class="" href="faq.html">FAQ</a></nav></aside><main class="content"><h1>scoreboard.yml</h1><pre><code>java:
+  enabled: true
+  update-interval: 20
+  show-numbers: false
+  title: "&lt;animation:scoreboard-title&gt;"
+  lines:
+    - "&amp;fPlayer: %player_name%"
+    - "&amp;fHealth: %gtabs_health%"
+    - "&amp;fPing: %player_ping%"
+
+bedrock:
+  enabled: true
+  update-interval: 20
+  show-numbers: false
+  title: "&lt;animation:scoreboard-title&gt;"
+  lines:
+    - "&amp;f%player_name%"
+    - "%gtabs_health%"
+    - "&amp;7Online: &amp;f%server_online%"</code></pre><p><code>show-numbers: false</code> requests hidden sidebar numbers on supported modern implementations. Players can use <code>/gsbtoggle</code>.</p><div class="footer">GTabs v1.0.0 • Author: Klioh_</div></main></div></body></html>

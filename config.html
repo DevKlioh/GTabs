@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>config.yml | GTabs Wiki</title><link rel="stylesheet" href="assets/style.css"></head><body><div class="layout"><aside class="sidebar"><div class="brand">G<span>Tabs</span></div><div class="tag">TAB • Scoreboard • UserLines</div><nav class="nav"><a class="" href="index.html">Home</a><a class="" href="installation.html">Installation</a><a class="active" href="config.html">config.yml</a><a class="" href="scoreboard.html">scoreboard.yml</a><a class="" href="animations.html">animations.yml</a><a class="" href="health.html">Health System</a><a class="" href="placeholders.html">Placeholders</a><a class="" href="compatibility.html">Compatibility</a><a class="" href="commands.html">Commands & Permissions</a><a class="" href="faq.html">FAQ</a></nav></aside><main class="content"><h1>config.yml</h1><h2>TAB</h2><pre><code>tablist:
+  enabled: true
+  update-interval: 20
+  header:
+    - "&lt;animation:server-name&gt;"
+    - "&amp;7Welcome, &lt;#55FFFF&gt;%player_name%&amp;7!"
+  footer:
+    - "&amp;7Online: &amp;a%server_online%"
+    - "&amp;7Ping: %player_ping%
+
+RanksinTab: "Owner,co-owner,admin,moderator,builder,helper,default"
+TabArrangement: "Ascending"
+
+TabPlayerName:
+  Format: "%luckperms_prefix% &amp;f%player_name%"</code></pre><h2>UserLines</h2><pre><code>UserLines:
+  Java:
+    Enabled: true
+    SelfVisible: false
+    AboveNameLine1: { Enabled: true, HeightOffset: 0.30, Text: "%luckperms_prefix%" }
+    PlayerName: { HeightOffset: 0.00, Text: "%player_name%" }
+    BelowNameLine1: { Enabled: true, HeightOffset: -0.30, Text: "%gtabs_health%" }
+
+  Bedrock:
+    Enabled: true
+    SelfVisible: false
+    AboveNameLine1: { Enabled: true, HeightOffset: 0.30, Text: "%luckperms_prefix%" }
+    PlayerName: { HeightOffset: 0.00, Text: "%player_name%" }
+    BelowNameLine1: { Enabled: true, HeightOffset: -0.30, Text: "%gtabs_health%" }
+
+  BedrockPOV:
+    Enabled: true
+    SelfVisible: false
+    AboveNameLine1: { Enabled: true, HeightOffset: 0.20, Text: "%luckperms_prefix%" }
+    PlayerName: { HeightOffset: 0.00, Text: "%player_name%" }
+    BelowNameLine1: { Enabled: true, HeightOffset: -0.20, Text: "%gtabs_health%" }
+
+PlayerHealth:
+  enabled: true
+  HealthStructure: "PercenHeart"</code></pre><p>Positive <code>HeightOffset</code> moves a line upward; negative moves it downward. BedrockPOV can be configured independently.</p><div class="footer">GTabs v1.0.0 • Author: Klioh_</div></main></div></body></html>
